@@ -1,8 +1,8 @@
-const app = require("./api/app");
+const index = require("./api");
 
 const PORT = process.env.PORT || 9090;
 
-app.listen(PORT, () =>
+index.listen(PORT, () =>
   console.log(`\n Server is running on port ${PORT}...\n`)
 );
-app.timeout = 60 * 10 * 1000;
+index.timeout = 60 * 10 * 1000;
