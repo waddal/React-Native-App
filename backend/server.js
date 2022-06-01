@@ -1,6 +1,6 @@
 const index = require("./api");
 
-const PORT = process.env.PORT || 9090;
+const PORT = process.env.PORT || 9999;
 
 index.listen(PORT, () =>
   console.log(`\n Server is running on port ${PORT}...\n`)

@@ -5,7 +5,7 @@ require("dotenv").config();
 const index = express();
 
 //ROUTERS
-const categoriesRouter = require("./routes/categories/categoriesRouter");
+const categoriesRouter = require("./routes/categories/categories-router");
 
 index.use(express.json());
 index.use(cors({ origin: "/" }));
@@ -13,7 +13,7 @@ index.use(cors({ origin: "/" }));
 index.use("/categories", categoriesRouter);
 
 index.get("*", (req, res, next) => {
-  res.json(`\n You're GETting it fresh from port ${PORT}...\n`);
+  res.json(`\n You're GETting it fresh from port ...\n`);
 });
 
 module.exports = index;
